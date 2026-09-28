@@ -1,0 +1,91 @@
+import type { Stage } from './types';
+
+export const STAGES: Stage[] = [
+  { id: 'gerencia', label: 'Gerencia' },
+  { id: 'dir_admin_1', label: 'Dir. Administrativo' },
+  { id: 'planif', label: 'Planificación' },
+  { id: 'dir_admin_2', label: 'Dir. Administrativo' },
+  { id: 'rpa_1', label: 'RPA' },
+  { id: 'cotizacion', label: 'Cotización' },
+  { id: 'rpa_2', label: 'RPA' },
+  { id: 'tecnico', label: 'Técnico' },
+  { id: 'dir_tec', label: 'Dir. Técnico' },
+];
+
+export const STAGE_PERSONNEL: Record<string, string[]> = {
+  gerencia: ['Carlos Méndez', 'Patricia Ruiz', 'José Alvarado'],
+  dir_admin_1: ['Laura Ríos', 'Manuel Castro'],
+  planif: ['Andrés Vega', 'Sofía Herrera', 'Diego Morales'],
+  dir_admin_2: ['Laura Ríos', 'Manuel Castro'],
+  rpa_1: ['Sistema RPA', 'Operador RPA 1', 'Operador RPA 2'],
+  cotizacion: ['Pedro Salas', 'Irene López', 'Fernando Gil'],
+  rpa_2: ['Sistema RPA', 'Operador RPA 1', 'Operador RPA 2'],
+  tecnico: ['Ing. Ramírez', 'Ing. Castillo', 'Ing. Montoya'],
+  dir_tec: ['Dir. Suárez', 'Dir. Peña'],
+};
+
+export const DESTINATARIOS = [
+  'Dir. Administrativa Financiera',
+  'Dir. Área Técnica',
+  'Asesoría Legal',
+  'Auditoria',
+  'Jefatura Cont. Presup. Tes.',
+  'Jefatura Recursos Humanos',
+  'Jefatura Proy. Serv. Mantenimiento',
+  'Educación y Comunicación',
+  'Tesorería',
+  'Almacenes',
+  'Bienes',
+  'Planificación y Presupuestos',
+  'R.P.C.',
+  'R.P.A.',
+  'Archivos',
+  'Sistemas',
+  'Mecánico A',
+  'Mecánico B',
+  'Supervisor A',
+  'Supervisor B',
+  'Supervisor C',
+  'Supervisor D',
+  'ODECO',
+  'Cotización y Adquisición',
+  'Secretaría',
+  'Sindicato',
+  'Sumariante',
+  'Planillero RR. HH.',
+  'Encargado Relleno Sanitario',
+  'Transparencia',
+];
+
+export const TAREAS = [
+  'Agradecer',
+  'Archivar',
+  'Asistir',
+  'Circularizar',
+  'Comentario y sugerencia',
+  'Coordinar',
+  'Cumplir',
+  'Dar Curso',
+  'Efectué seguimiento',
+  'Felicitar',
+  'Informe',
+  'Inspección',
+  'Investigar',
+  'No dar curso',
+  'Para su conocimiento',
+  'Prepare respuesta para mi firma',
+  'Resolver',
+  'Responder',
+  'Reunión en mi despacho',
+  'Solicitar',
+  'Urgente',
+  'Tome Acción necesaria',
+  'Certificación Presupuestaria',
+  'Corregir',
+  'Subsane Observación',
+  'Para su atención',
+];
+
+export const ALERT_MS = 48 * 60 * 60 * 1000;
+
+export const HOUR_MS = 60 * 60 * 1000;
